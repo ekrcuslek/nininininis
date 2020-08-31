@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+
+img{
+width:230px;
+height: 70px;
+}
+
+body {
+	background-color: #E6CDA7;
+}
+
+td {
+	text-align: center;
+
+
+
+}
+
+a:hover {
+	text-decoration: none;
+	color:black;
+}
+
+a:link {
+	text-decoration: none;
+	color:black;
+}
+
+a:visited {
+	text-decoration: none;
+	color:black;
+}
+
+a:active {
+	text-decoration: none;
+	color:black;
+}
+
+table {
+	table-layout: fixed;
+}
+</style>
+
+<script>
+	var muCnt = 5;
+	function fncShow(pos) {
+		var i = 0;
+		for (i; i < muCnt; i++) {
+			var obj = document.getElementById("menu" + i);
+			var obj2 = document.getElementById("m" + i);
+			if (i == pos) {
+				obj.style.display = '';
+				obj2.style.color = "white";
+			} else {
+				obj.style.display = 'none';
+				obj2.style.background = "#E6CDA7";
+			}
+
+		}
+	}
+	function textcolor(e) {
+		e.style.color="black";
+	}
+	function fncHide(pos) {
+		var obj = document.getElementById("menu" + pos);
+		obj.style.display = "none";
+	}
+	function fncHide1() {
+		document.getElementById("menu0").style.display="none";
+		document.getElementById("menu1").style.display="none";
+		document.getElementById("menu2").style.display="none";
+		document.getElementById("menu3").style.display="none";
+		document.getElementById("menu4").style.display="none";
+
+	}
+</script>
+
+</head>
+<body onmouseleave="fncHide1()">
+	<div style="position:absolute;left:20%; top:0; width:800px;">
+   <table cellpadding="0" cellspacing="1" border="0" width="800" height="60">
+      <tr>
+         <td width=300 id="logo"><a href="main.html" target=here><img src="logo.jpg"></a></td>
+         <td>
+            <table cellpadding="0" cellspacing="0" border="0" width="600" height="60">
+               <tr height="30">
+                  <td width="50" />
+                  <td width="100" onmouseover="fncShow(0)" id="m0" onmouseout="textcolor(this); "><b> 리조트소개 </b></td>
+                  <td width="100" onmouseover="fncShow(1)" id="m1" onmouseout="textcolor(this); "><b> 오시는길 </b></td>
+                  <td width="100" onmouseover="fncShow(2)" id="m2" onmouseout="textcolor(this); "><b> 주변여행지 </b></td>
+                  <td width="100" onmouseover="fncShow(3)" id="m3" onmouseout="textcolor(this); "><b> 예약하기 </b></td>
+                  <td width="100" onmouseover="fncShow(4)" id="m4" onmouseout="textcolor(this); "><b> 리조트소식 </b></td>
+                  <td width="50" />
+               </tr>
+               <tr height="30">
+                  <td colspan="7">
+                     <table id="menu0" style="display: none" cellpadding="0" cellspacing="0" width="600" height="30">
+                        <tr>
+                           <td width="20" />
+                           <td width="680" style="text-align: left"><a href="main.html"
+								target="here"> <span
+									onmouseover="this.style.color='white'"
+									onmouseout="this.style.color='#000000'"> | 사계절 호텔&리조트 |</span></a> <a
+								href="viproom.html" target="here"><span
+									onmouseover="this.style.color='white'"
+									onmouseout="this.style.color='#000000'"> 스위트룸 |</span></a> <a
+								href="diluxroom.html" target="here"><span
+									onmouseover="this.style.color='white'"
+									onmouseout="this.style.color='#000000'"> 디럭스룸 |</span></a>
+									<a href="bizroom.html" target="here">
+								<span onmouseover="this.style.color='white'"
+								onmouseout="this.style.color='#000000'"> 비즈니스룸 |</span></a></td>
+                        </tr>
+                     </table>
+
+                     <table id="menu1" style="display: none" cellpadding="0" cellspacing="0" width="600" height="30">
+                        <tr>
+                           <td width="100" />
+                           <td width="600" style="text-align: left"><a href="map.html"
+								target="here"> <span
+									onmouseover="this.style.color='white'"
+									onmouseout="this.style.color='#000000'; ">| 오시는 길 |</span></a> <a
+								href="https://map.kakao.com/link/to/한국폴리텍대학 융합기술교육원,37.3860521, 127.1214038" target="here"><span
+									onmouseover="this.style.color='white'"
+									onmouseout="this.style.color='#000000'"> 대중교통이용 |</span></a> <a
+								href="https://map.kakao.com/link/to/한국폴리텍대학 융합기술교육원,37.3860521, 127.1214038" target="here"><span
+									onmouseover="this.style.color='white'"
+									onmouseout="this.style.color='#000000'"> 자가용이용 |</span></a></td>
+                        </tr>
+                     </table>
+
+                     <table id="menu2" style="display: none" cellpadding="0" cellspacing="0" width="600" height="30">
+                        <tr>
+                           <td width="220" />
+                           <td width="480" style="text-align: left"><a href="around.html"
+								target="here"> <span
+									onmouseover="this.style.color='white'"
+									onmouseout="this.style.color='#000000'">| 분당스퀘어 |</span></a> <a
+								href="around1.html" target="here"><span
+									onmouseover="this.style.color='white'"
+									onmouseout="this.style.color='#000000'"> 황새울공원 |</span></a> <a
+								href="around2.html" target="here"><span
+									onmouseover="this.style.color='white'"
+									onmouseout="this.style.color='#000000'"> 백두금강산 |</span></a></td>
+                        </tr>
+                     </table>
+
+                     <table id="menu3" style="display: none" cellpadding="0" cellspacing="0" width="600" height="30">
+                        <tr>
+                           <td width="230" />
+                           <td width="470" style="text-align: left"><a href="book_list2.jsp"
+								target="here"> <span
+									onmouseover="this.style.color='white'"
+									onmouseout="this.style.color='#000000'" >| 예약상황 |</span></a> <a
+								href="#" target="here"><span
+									onmouseover="this.style.color='white'"
+									onmouseout="this.style.color='#000000'" onclick="return false;"> 예약하기 |</span></a> <a
+								href="#" target="here"><span
+									onmouseover="this.style.color='white'"
+									onmouseout="this.style.color='#000000'" onclick="return false;"> 관리자페이지 |</span></a>
+									<a
+								href="#" target="here"><span
+									onmouseover="this.style.color='white'"
+									onmouseout="this.style.color='#000000'" onclick="return false;"> 관리자로그아웃 |</span></a></td>
+                        </tr>
+                     </table>
+
+                     <table id="menu4" style="display: none" cellpadding="0" cellspacing="0" width="600" height="30">
+                        <tr>
+                           <td width="450" />
+                           <td width="250" style="text-align: left">
+                           <a href="realgongji_list.jsp"
+								target="here"> <span
+									onmouseover="this.style.color='white'"
+									onmouseout="this.style.color='#000000'">| 공지사항 게시판 |</span></a> <a
+								href="/WEB/board8/gongji_list.jsp" target="here"><span
+									onmouseover="this.style.color='white'"
+									onmouseout="this.style.color='#000000'"> 후기 남기기 |</span></a></td>
+                        </tr>
+                     </table>
+                  </td>
+               </tr>
+            </table>
+         </td>
+      </tr>
+   </table>
+   </div>
+   </div>
+
+</body>
+
+
+
+
+
+</body>
+</html>
