@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration 
+	PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+	<configuration>
+	<!-- 나중에  alia로 매퍼에서 voteVo 필드를 ${}로 넣을 수 있다 -->
+		<typeAliases>
+			<typeAlias type="com.kopo.dto.HuboVO" alias="huboVO"/>
+			<typeAlias type="com.kopo.dto.VoinJavaForVote" alias="vovo"/>
+			<typeAlias type="com.kopo.dto.VoteVO" alias="voteVO"/>
+		</typeAliases>
+	</configuration>
+	

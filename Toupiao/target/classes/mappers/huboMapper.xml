@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.kopo.mapper.huboMapper">
+	
+	<select id="selectHubo" resultType="huboVO">
+		SELECT no, name FROM hubo
+	</select>
+	
+	<insert id="insertHubo" >
+		INSERT INTO hubo VALUES (#{no}, #{name})
+	</insert>
+	
+	<insert id="insertHubovoteTB">
+		INSERT INTO vote(no) VALUES (#{no})	
+	</insert>
+	
+	<delete id="deleteHubo">
+		delete from hubo where no = #{no}
+	</delete>
+	
+	<delete id="deleteVote">
+		delete from vote where no = #{no}
+	</delete>
+	
+	<update id="updateVote" parameterType="vovo">
+		update vote set age${age} = ifnull(age${age},0)+1 where no = ${no}
+		
+	</update>
+	
+	<select id="selectVote" resultType="voteVO">
+		select * from vote
+	</select>
+	
+</mapper>
